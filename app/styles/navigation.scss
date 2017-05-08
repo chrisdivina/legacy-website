@@ -1,0 +1,23 @@
+@import 'colours';
+
+.nav {
+  background-color: $dark
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.nav-item {
+  flex: 1;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
