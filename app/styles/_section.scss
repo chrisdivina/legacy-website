@@ -1,0 +1,15 @@
+.section {
+  padding: 75px 50px;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  & p {
+    font: 24px/30px Garamond, serif;
+  }
+}
+
+.section-title {
+  font: 54px/1.23 Futura Md, sans-serif;
+  text-align: center;
+  padding-bottom: 25px;
+}

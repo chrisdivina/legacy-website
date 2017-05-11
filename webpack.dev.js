@@ -27,13 +27,12 @@ module.exports = {
       use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            'css-loader',
+            { loader: 'css-loader', options: { importLoaders: 1 } },
             {
               loader: 'postcss-loader',
               options: {
                 plugins: (loader) => [
-                  require('postcss-import')(),
-                  require('cssnext')(),
+                  require('postcss-import')({ root: loader.resourcePath }),
                   require('autoprefixer')(),
                   require('cssnano')()
                 ]

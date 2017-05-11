@@ -5,38 +5,74 @@
     <title></title>
   </head>
   <body>
-    <nav class="nav">
-      <ul class="nav-container">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <header>
-      <h1>Christophe Divina, Front-End Web Developper</h1>
-      <p>Hi, my name is Christophe Divina. I am a Front-End Web Developper</p>
+    <header class="main-header">
+      <div class="header-desc">
+        <h1>Hi, my name is Christophe Divina. I am a Front-End Web Developper</h1>
+      </div>
+      <nav class="nav">
+        <ul class="nav-container">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <section id="about">
 
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <p>Phasellus bibendum arcu ut elementum efficitur. Aenean molestie dolor sed urna molestie finibus. Suspendisse varius magna eu nisl ornare, ut ornare mauris feugiat. Phasellus posuere a dui id maximus. Nulla non erat feugiat augue lacinia maximus. Fusce viverra, lacus vel accumsan ultricies, urna enim mattis mauris, eget ultrices velit sapien sit amet ligula. Nullam vel tellus lectus. <a href="#">Download my CV</a></p>
     </section>
+
     <section id="portfolio">
-      <ul>
+
+      <header class="portfolio-header">
+        <div class="section">
+          <h2 class="section-title">Portfolio</h2>
+          <p>Suspendisse tellus ex, finibus commodo eros id, convallis accumsan ligula. Praesent sed ullamcorper ligula, eget lobortis nibh.</p>
+        </div>
+      </header>
+
+
+      <ul class="portfolio-list">
+
         <li>
-          <h3 class="portfolio-title">Trendstop</h3>
-          <p class="portfolio-desc">I am currently a <strong>Senior Web Developer</strong> at <a href="https://www.trendstop.com" target="_blank">Trendstop</a>, where I focus mainly on front-end development. Fashion industry -> challenges -> heavy use of high definition images. Especially worked on free site, stories and catwalk gallery.</p>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="" alt="" />
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">Trendstop</h3>
+              <p class="portfolio-desc">I am currently a <strong>Senior Web Developer</strong> at <a href="https://www.trendstop.com" target="_blank">Trendstop</a>, where I focus mainly on front-end development. Fashion industry -> challenges -> heavy use of high definition images. Especially worked on free site, stories and catwalk gallery.</p>
+            </div>
+          </div>
         </li>
+
         <li>
-          <h3 class="portfolio-title">The Culture Trip</h3>
-          <p class="portfolio-desc">I joined <a href="https://theculturetrip.com/" target="_blank">The Culture Trip</a> in its early days, when it was a very small startup. They needed someone to look after their website to please their rapidily increasing number of visitors, and to smooth the editorial process. As the <strong>Head of UX & Front-End Development</strong>, I was in charge to revamp the whole website, migrate 10,000+ articles from an XML-based CMS to a Wordpress database, as well as create several tools to improve the editorial production workflow.</p>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="" alt="" />
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">The Culture Trip</h3>
+              <p class="portfolio-desc">I joined <a href="https://theculturetrip.com/" target="_blank">The Culture Trip</a> in its early days, when it was a very small startup. They needed someone to look after their website to please their rapidily increasing number of visitors, and to smooth the editorial process. As the <strong>Head of UX & Front-End Development</strong>, I was in charge to revamp the whole website, migrate 10,000+ articles from an XML-based CMS to a Wordpress database, as well as create several tools to improve the editorial production workflow.</p>
+            </div>
+          </div>
         </li>
+
       </ul>
+
+      <div class="section">
+        <h2 class="section-title">I've also worked with...</h2>
+        <p><img src="" alt=""></p>
+      </div>
+
     </section>
     <section id="contact">
 
     </section>
-    <footer>
-
+    <footer class="main-footer">
+      <p>&copy; Christophe Divina 2017</p>
     </footer>
   </body>
 

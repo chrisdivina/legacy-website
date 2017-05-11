@@ -1,0 +1,24 @@
+@import './section';
+
+.portfolio-header {
+  color: #fff;
+  background-color: #8f8f8f;
+}
+.portfolio-list {
+  & > li:nth-child(even) {
+    background-color: #e0e0e0;
+    & .portfolio-image { order: 2; }
+    & .portfolio-info { order: 1; }
+  }
+}
+.portfolio-item {
+  @extend .section;
+  display: flex;
+}
+
+.portfolio-image { flex: 1; }
+.portfolio-info { flex: 2; }
+
+.portfolio-title {
+  font: 700 40px Garamond, serif;
+}

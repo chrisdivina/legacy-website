@@ -1,0 +1,31 @@
+@import 'colours';
+
+.nav {
+  margin: auto auto 0;
+  width: 100%;
+  max-width: 700px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.nav-item {
+  flex: 1;
+}
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 15px;
+  font: 22px/1.23 Futura Md, sans-serif;
+  color: #fff;
+  border-bottom: 5px solid transparent;
+
+  &:hover, &:focus {
+    border-color: #fff;
+  }
+}

@@ -1,0 +1,22 @@
+@import './navigation';
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  padding: 50px;
+  background-color: #d0d0d0;
+}
+
+.header-desc {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: center;
+  flex: 1;
+  padding: 50px;
+  width: 50%;
+  box-sizing: border-box;
+  font: 700 60px/1.23 Garamond, serif;
+  color: #fff;
+}

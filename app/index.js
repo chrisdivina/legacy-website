@@ -1,6 +1,7 @@
 import './styles/styles.scss';
 
 //Make sure this code is not included in production
+console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV !== "production" && module.hot) {
   var hotEmitter = require("webpack/hot/emitter");
   hotEmitter.on("webpackHotUpdate", function(currentHash) {
