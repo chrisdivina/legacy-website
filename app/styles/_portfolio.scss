@@ -2,11 +2,11 @@
 
 .portfolio-header {
   color: #fff;
-  background-color: #8f8f8f;
+  background-color: #62929E;
 }
 .portfolio-list {
   & > li:nth-child(even) {
-    background-color: #e0e0e0;
+    background-color: #f1f1f1;
     & .portfolio-image { order: 2; }
     & .portfolio-info { order: 1; }
   }

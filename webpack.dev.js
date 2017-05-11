@@ -8,7 +8,8 @@ module.exports = {
   entry: './app/index.js',
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    publicPath: 'http://localhost:8080/',
+    filename: "bundle.js",
   },
 
   devtool: "cheap-module-source-map",
@@ -32,7 +33,7 @@ module.exports = {
               loader: 'postcss-loader',
               options: {
                 plugins: (loader) => [
-                  require('postcss-import')({ root: loader.resourcePath }),
+
                   require('autoprefixer')(),
                   require('cssnano')()
                 ]
@@ -48,6 +49,13 @@ module.exports = {
       options: {
           presets: ['es2015']
         }
+    },
+    {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
     }]
   },
 
