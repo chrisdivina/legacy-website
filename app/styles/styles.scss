@@ -1,9 +1,22 @@
-@import './reset';
-@import './header';
-@import './section';
-@import './portfolio';
-@import './footer';
+@import 'reset';
+@import 'header';
+@import 'section';
+@import 'timeline';
+@import 'skills';
+@import 'portfolio';
+@import 'footer';
 
+a {
+  color: #14BDEB;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
 .text-highlight {
   color: #EAF7CF;
+}
+
+.about-split {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }

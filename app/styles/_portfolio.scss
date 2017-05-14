@@ -1,13 +1,30 @@
 @import './section';
+@import './parallax';
 
 .portfolio-header {
   color: #fff;
-  background-color: #62929E;
+  background-color: #14BDEB;
 }
+
 .portfolio-list {
+  & [data-portfolio="trendstop"] {
+    background: linear-gradient(to right, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.9)), url(/images/trendstop-background.jpg) top center/cover
+  }
+  & [data-portfolio="culturetrip"] {
+    color: #fff;
+    background: linear-gradient(to right, rgba(98, 98, 98, .97), rgba(98, 98, 98, 0.97)), url(/images/culturetrip-background.jpg) top center/cover
+  }
+  & > li:nth-child(odd) {
+    & .portfolio-image {
+      margin-right: 20px;
+    }
+  }
   & > li:nth-child(even) {
     background-color: #f1f1f1;
-    & .portfolio-image { order: 2; }
+    & .portfolio-image {
+      order: 2;
+      margin-left: 20px;
+    }
     & .portfolio-info { order: 1; }
   }
 }
@@ -16,9 +33,41 @@
   display: flex;
 }
 
-.portfolio-image { flex: 1; }
-.portfolio-info { flex: 2; }
+.portfolio-image {
+  flex: 2;
+  & a {
+    position: relative;
+    display: block;
+    &:after {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0);
+      transition: background 300ms;
+    }
+    &:hover:after {
+      content: 'See full image';
+      color: #fff;
+      background-color: rgba(0,0,0,.7);
+    }
+  }
+  & img {
+    max-width: 100%;
+    box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+  }
+}
+.portfolio-info { flex: 3; }
 
 .portfolio-title {
   font: 700 40px Garamond, serif;
+}
+
+.portfolio-parallax {
+  background: url(/images/trendstop-background.jpg) center center/cover;
 }

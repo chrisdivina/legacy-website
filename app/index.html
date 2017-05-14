@@ -21,7 +21,61 @@
 
     <section id="about" class="section">
       <h2 class="section-title">About Me</h2>
-      <p>Phasellus bibendum arcu ut elementum efficitur. Aenean molestie dolor sed urna molestie finibus. Suspendisse varius magna eu nisl ornare, ut ornare mauris feugiat. Phasellus posuere a dui id maximus. Nulla non erat feugiat augue lacinia maximus. Fusce viverra, lacus vel accumsan ultricies, urna enim mattis mauris, eget ultrices velit sapien sit amet ligula. Nullam vel tellus lectus. <a href="#">Download my CV</a></p>
+      <p>My name is Christophe Divina and I am a front-end developer, aiming to find a balance between appealing design, maintainable code and optimal web performance. <a href="#">Download my CV</a></p>
+
+      <div class="about-split">
+
+        <ul class="skills">
+          <li>Gulp</li>
+          <li>Webpack</li>
+          <li>React JS</li>
+          <li>jQuery</li>
+          <li>SASS</li>
+        </ul>
+
+        <ol class="timeline">
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">1990</h3>
+            <p class="timeline__event--desc">Get an <a href="https://en.wikipedia.org/wiki/Amiga_500">Amiga 500</a> and did my first programming steps in <a href="https://en.wikipedia.org/wiki/BASIC" target="_blank">BASIC</a></p>
+          </li>
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">2002</h3>
+            <p class="timeline__event--desc">Graduate in Computing Science at IUT de Metz (Metz, France)</p>
+          </li>
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">2005</h3>
+            <p class="timeline__event--desc">Erasmus studies (Jaen, Spain)</p>
+            <p class="timeline__event--desc">Graduate in Language Studies (Metz, France)</p>
+          </li>
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">2006</h3>
+            <p class="timeline__event--desc">Start working in research &amp; writing (London, UK)</p>
+          </li>
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">2011</h3>
+            <p class="timeline__event--desc">Graduate in Digital Media at London Metropolitan University (London, UK)</p>
+            <p class="timeline__event--desc">Move to Brussels, Belgium</p>
+          </li>
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">2012</h3>
+            <p class="timeline__event--desc">Career change and become Web Designer at S2Media (Brussels, Belgium)</p>
+          </li>
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">2013</h3>
+            <p class="timeline__event--desc">Web Developper at Virtual Universe (London, UK)</p>
+          </li>
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">2015</h3>
+            <p class="timeline__event--desc">Head of UX &amp; Front-End Development at The Culture Trip (London, UK)</p>
+          </li>
+          <li class="timeline__event">
+            <h3 class="timeline__event--date">2016</h3>
+            <p class="timeline__event--desc">Senior Web Developper at Virtual Universe (London, UK)</p>
+          </li>
+        </ol>
+
+      </div>
+
     </section>
 
     <section id="portfolio">
@@ -36,10 +90,12 @@
 
       <ul class="portfolio-list">
 
-        <li>
+        <li data-portfolio="trendstop">
           <div class="portfolio-item">
             <div class="portfolio-image">
-              <img src="" alt="" />
+              <a href="https://www.trendstop.com/" target="_blank">
+                <img src="/images/trendstop-background.jpg" alt="" />
+              </a>
             </div>
             <div class="portfolio-info">
               <h3 class="portfolio-title">Trendstop</h3>
@@ -48,10 +104,10 @@
           </div>
         </li>
 
-        <li>
+        <li data-portfolio="culturetrip">
           <div class="portfolio-item">
             <div class="portfolio-image">
-              <img src="" alt="" />
+              <img src="/images/culturetrip-background.jpg" alt="" />
             </div>
             <div class="portfolio-info">
               <h3 class="portfolio-title">The Culture Trip</h3>
