@@ -15,8 +15,11 @@
   justify-content: center;
   flex: 1;
   padding: 50px;
-  width: 50%;
   box-sizing: border-box;
   font: 700 60px/1.23 Garamond, serif;
   color: #fff;
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
 }

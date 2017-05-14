@@ -1,1 +1,29 @@
-.skills { flex: 1; }
+.skills {
+  width: 100%;
+  max-width: 300px;
+  font: 18px/1.23 Garamond, sans-serif;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.bullets {
+  display: flex;
+
+  & > li {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #626262;
+
+    &.empty { background-color: transparent;}
+  }
+}

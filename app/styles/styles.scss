@@ -17,6 +17,24 @@ a {
 
 .about-split {
   display: flex;
+  justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.about__container {
+  flex: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.about__aside {
+  @extend .about__container;
+  flex: 0 1 300px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: rgba( 96, 96, 96, 0.1);
+}
+.about__subtitle {
+  font: 700 24px/1.23 Futura Md, sans-serif;
+  padding-bottom: 10px;
 }
