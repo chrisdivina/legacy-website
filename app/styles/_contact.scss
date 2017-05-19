@@ -1,0 +1,46 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 70%;
+
+}
+
+.contact-element {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding-bottom: 10px;
+
+  & label {
+    display: block;
+    font: 20px/1.23 Garamond, serif;
+  }
+
+  & input,
+  & textarea {
+    flex: 0 1 400px;
+    padding: 10px 5px;
+    border: 1px solid;
+  }
+
+  & textarea {
+    min-height: 150px;
+  }
+
+  & button {
+    flex: 0 1 150px;
+    margin-left: auto;
+  }
+}
+
+.contact-group {
+  border: 1px solid;
+  padding: 30px;
+}
+
+.contact-legend {
+  padding-left: 10px;
+  padding-right: 10px;
+}

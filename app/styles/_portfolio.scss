@@ -8,66 +8,60 @@
 
 .portfolio-list {
   & [data-portfolio="trendstop"] {
-    background: linear-gradient(to right, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.9)), url(/images/trendstop-background.jpg) top center/cover
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url(/images/trendstop-background.jpg) top center/cover
   }
   & [data-portfolio="culturetrip"] {
     color: #fff;
-    background: linear-gradient(to right, rgba(98, 98, 98, .97), rgba(98, 98, 98, 0.97)), url(/images/culturetrip-background.jpg) top center/cover
+    background: linear-gradient(to top, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0.8)), url(/images/culturetrip-background.jpg) top center/cover
   }
-  & > li:nth-child(odd) {
-    & .portfolio-image {
-      margin-right: 20px;
-    }
-  }
-  & > li:nth-child(even) {
-    background-color: #f1f1f1;
-    & .portfolio-image {
-      order: 2;
-      margin-left: 20px;
-    }
-    & .portfolio-info { order: 1; }
-  }
+
 }
 .portfolio-item {
-  @extend .section;
+  min-height: 100vh;
+  padding: 75px 50px;
+  font: 24px/30px Garamond, serif;
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.portfolio-image {
-  flex: 2;
-  & a {
-    position: relative;
-    display: block;
-    &:after {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      content: '';
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0,0,0,0);
-      transition: background 300ms;
-    }
-    &:hover:after {
-      content: 'See full image';
-      color: #fff;
-      background-color: rgba(0,0,0,.7);
-    }
-  }
-  & img {
-    max-width: 100%;
-    box-shadow: 0px 10px 10px rgba(0,0,0,.2);
-  }
+.portfolio-item:nth-child(even) {
+  background-color: #f1f1f1;
 }
-.portfolio-info { flex: 3; }
 
 .portfolio-title {
   font: 700 40px Garamond, serif;
 }
 
-.portfolio-parallax {
-  background: url(/images/trendstop-background.jpg) center center/cover;
+.portfolio-note {
+  padding-top: 30px;
+  font: 18px/24px Garamond, serif;
+}
+
+.portfolio-examples {
+  flex: 0 1 1024px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-example {
+  flex: 0 1 300px;
+}
+
+.portfolio-example__image {
+  box-shadow: 0 5px 5px rgba(0,0,0,.3);
+
+  & img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.portfolio-example__desc {
+  font: 18px/24px Garamond, serif;
+  padding-top: 8px;
+  text-align: center;
 }

@@ -35,9 +35,20 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div className="contact-form">
-        <input ref={(el) => { this.from = el; }} type="text" placeholder="Your email address" />
-        <textarea ref={(el) => { this.message = el; }} placeholder="Enter your message"></textarea>
-        <button onClick={this.sendEmail}>Send Message</button>
+        <fieldset className="contact-group">
+          <legend className="contact-legend">Get in touch</legend>
+          <div className="contact-element">
+            <label htmlFor="from">From: </label>
+            <input name="from" ref={(el) => { this.from = el; }} type="text" placeholder="Your email address" />
+          </div>
+          <div className="contact-element">
+            <label htmlFor="message">Message: </label>
+            <textarea name="message" ref={(el) => { this.message = el; }} placeholder="Enter your message"></textarea>
+          </div>
+          <div className="contact-element">
+            <button onClick={this.sendEmail}>Send Message</button>
+          </div>
+        </fieldset>
       </div>
     );
   }
