@@ -8,11 +8,11 @@
 
 .portfolio-list {
   & [data-portfolio="trendstop"] {
-    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url(/images/trendstop-background.jpg) top center/cover
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.87)), url(/images/trendstop-background.jpg) top center/cover
   }
   & [data-portfolio="culturetrip"] {
     color: #fff;
-    background: linear-gradient(to top, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0.8)), url(/images/culturetrip-background.jpg) top center/cover
+    background: linear-gradient(to top, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0.93)), url(/images/culturetrip-background.jpg) top center/cover
   }
 
 }
@@ -52,7 +52,6 @@
 }
 
 .portfolio-example__image {
-  box-shadow: 0 5px 5px rgba(0,0,0,.3);
 
   & img {
     display: block;
