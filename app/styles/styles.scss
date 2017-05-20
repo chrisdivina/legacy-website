@@ -18,13 +18,14 @@ a {
 
 .about-split {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .about__container {
-  flex: 1;
+  flex: 1 1 490px;
   padding-top: 10px;
   padding-bottom: 10px;
 }

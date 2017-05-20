@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import 'whatwg-fetch';
 
 //Make sure this code is not included in production
-if (process.env.NODE_ENV !== "prod" && module.hot) {
+if (process.env.NODE_ENV !== "production" && module.hot) {
   var hotEmitter = require("webpack/hot/emitter");
   hotEmitter.on("webpackHotUpdate", function(currentHash) {
     document.querySelectorAll('link[href][rel=stylesheet]').forEach((link) => {
@@ -58,7 +58,7 @@ class ContactForm extends React.Component {
 /*
   * But we want to use our new `contact` here!
   */
-ReactDOM.render(
+/*ReactDOM.render(
   <ContactForm />,
   document.getElementById('contact-form')
-)
+)*/
