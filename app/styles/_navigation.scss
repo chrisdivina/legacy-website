@@ -8,13 +8,21 @@
 
 .nav-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 10px;
+
+  @media (min-width: 520px) {
+    padding: 10px;
+  }
 }
 
 .nav-item {
-  flex: 1;
-  text-align: center;
+  flex: 1 1 50%;
+
+  @media (min-width: 433px) {
+    flex-basis: auto;
+    text-align: center;
+  }
 }
 
 .nav-link {
